@@ -1,0 +1,28 @@
+Algoritmo sin_titulo
+	Imprimir " dime un numero "
+	leer z
+	ac1= z * z
+	x = 1
+	m= 1
+	imprimir " la elevacion del numero dado es "  ac1
+	a=1
+	Mientras ( a <= z )
+		mientras ( x <= z )
+			mientras ( m <= z )
+				si ( x * x) + (m * m) = ac1
+					ac2= m* m
+					imprimir m "*" m  "=" ac2
+					ac3= x* x
+					imprimir x "*" x  "=" ac3
+					
+					imprimir " los numeros elevados y sumados den el numero " , ac1 ,  " son : " ,  m , " y "  x 
+					
+				FinSi
+				m= m + 1
+			FinMientras
+			x = x + 1 
+			m=1
+		FinMientras
+		
+	FinMientras
+FinAlgoritmo
