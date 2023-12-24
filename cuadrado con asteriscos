@@ -1,0 +1,22 @@
+Algoritmo sin_titulo
+	Mientras n<3 o n>20 Hacer
+		leer n
+	FinMientras
+	Para i<-1 Hasta n Con Paso 1 Hacer
+		si i=1 o i =n Entonces
+			para j <-1 Hasta n Con paso 1 Hacer
+			  Escribir sin saltar " " "*"
+				
+			FinPara
+			Escribir " "
+		SiNo
+			Para k<-1 Hasta n Con Paso n - 1 Hacer
+				Escribir sin saltar " " "*"
+				Para l<-1 Hasta n+1 Con Paso 1 Hacer
+					Escribir sin saltar " "
+				FinPara
+			FinPara
+			Escribir ""
+		FinSi
+	FinPara
+FinAlgoritmo
