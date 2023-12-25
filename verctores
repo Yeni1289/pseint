@@ -1,0 +1,21 @@
+Algoritmo sin_titulo
+    Imprimir "Dime cuantos son los trabajadores que se les preguntara su edad"
+    leer x
+    d = 1
+    Dimension vector[x]
+	
+    Mientras d <= x Hacer
+        Imprimir "Ingresa tu edad persona  ", d
+        leer vector[d] 
+        d = d + 1
+    FinMientras
+	
+    Imprimir "Las edades  mayores o iguales a 50 son:"
+	
+    r = 1
+    Mientras r <= x Hacer
+        Si vector[r] >= 50 Entonces
+            Imprimir vector[r]
+        FinSi
+        r = r + 1
+    FinMientras
