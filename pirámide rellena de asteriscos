@@ -1,0 +1,17 @@
+Algoritmo sin_titulo
+	definir base , i , espcio , asterisco Como Entero
+	Escribir " ingrese base " 
+	leer base 
+	para i <- 1 Hasta base Con Paso 1 Hacer
+		para espacio <- 1 Hasta base + i Con Paso 1 Hacer
+			escribir sin saltar " "
+			
+		FinPara
+		para asterisco <- 1 Hasta i Con Paso 1 Hacer
+			escribir Sin Saltar " *"
+			
+		FinPara
+		escribir " "
+		
+	FinPara
+FinAlgoritmo
