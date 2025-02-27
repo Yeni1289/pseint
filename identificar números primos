@@ -1,0 +1,63 @@
+Algoritmo IdentificarPrimos
+    Definir n, i, j, divisor como Entero
+    Definir esPrimo como Logico
+	
+    Escribir "Ingrese un número para verificar si es primo: "
+    Leer n
+	
+    esPrimo <- Verdadero
+	
+    // Verificar si n es primo
+	si n <= 0 Entonces
+		Escribir n, " no es un número real ."
+	sino 
+		
+		Si n <= 1 Entonces
+			esPrimo <- Falso
+		Sino
+			Para i <- 2 Hasta n-1 Hacer
+				Si n MOD i = 0 Entonces
+					esPrimo <- Falso
+					//Detener
+				Fin Si
+			Fin Para
+		Fin Si
+		
+		// Mostrar resultado
+		Si esPrimo Entonces
+			Escribir n, " es un número primo."
+			Escribir "Sus números primos anteriores son:"
+			Para j <- 2 Hasta n-1 Hacer
+				esPrimo <- Verdadero
+				Para i <- 2 Hasta j-1 Hacer
+					Si j MOD i = 0 Entonces
+						esPrimo <- Falso
+						//Detener
+					Fin Si
+				Fin Para
+				Si esPrimo Entonces
+					Escribir j, " es un número primo con sus divisores:"
+					Para divisor <- 1 Hasta j Hacer
+						Si j MOD divisor = 0 Entonces
+							Escribir j, " / ", divisor, " = ", trunc(j/divisor)
+						Fin Si
+					Fin Para
+				Fin Si
+			Fin Para
+			Escribir n, " es un número primo con sus divisores:"
+			Para divisor <- 1 Hasta n Hacer
+				Si n MOD divisor = 0 Entonces
+					Escribir n, " / ", divisor, " = ", trunc(n/divisor)
+				Fin Si
+			Fin Para
+		Sino
+			Escribir n, " no es un número primo."
+		Fin Si
+	FinSi
+	
+	
+FinAlgoritmo
+
+
+
+
