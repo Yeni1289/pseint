@@ -1,0 +1,10 @@
+Algoritmo sin_titulo
+	Escribir " dime un numero "
+	leer x
+	si x - trunc(x) == 0 Entonces
+		Escribir " el numero " ,x, " es entero "
+	sino 
+		Escribir " el numero " ,x , " es decimal  "
+ 
+ 	FinSi
+FinAlgoritmo
