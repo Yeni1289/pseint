@@ -1,0 +1,210 @@
+Funcion multi (z ,k)
+	imprimir " Estas son las 10 tabalas de multiplicar "
+	a=1
+	t=1
+	mientras ( a  <= 10)
+		b=1
+		mientras ( b <= 10)
+			r = a * b 
+			imprimir a "*" b "=" r
+			b= b+ 1
+			
+		FinMientras
+		imprimir " Pulsa enter por favor  "
+		leer x
+		borrar pantalla 
+		a=a+ 1
+	FinMientras
+	
+FinFuncion
+Funcion cuadrado (z , k)
+	ac1= z * z
+	x = 1
+	m= 1
+	imprimir " La elevacion del numero dado es "  ac1
+	a=1
+	Mientras ( a <= z )
+		mientras ( x <= z )
+			mientras ( m <= z )
+				si ( x * x) + (m * m) = ac1
+					ac2= m* m
+					imprimir m "*" m  "=" ac2
+					ac3= x* x
+					imprimir x "*" x  "=" ac3
+					
+					imprimir " Los numeros elevados y sumados den el numero " , ac1 ,  " son : " ,  m , " y "  x 
+					
+				FinSi
+				m= m + 1
+			FinMientras
+			x = x + 1 
+			m=1
+		FinMientras
+	Imprimir "Presiona enter para el siguiente numero "
+	leer p
+	Borrar Pantalla
+	
+	ac4= k * k
+	x2 = 1
+	m2= 1
+	imprimir " La elevacion del numero dado es "  ac4
+	a2=1
+	Mientras ( a2 <= k )
+		mientras ( x2 <= k )
+			mientras ( m2 <= k )
+				si ( x2 * x2) + (m2 * m2) = ac4
+					ac5= m2* m2
+					imprimir m2 "*" m2 "=" ac5
+					ac6= x2* x2
+					imprimir x2 "*" x2  "=" ac6
+					
+					imprimir " Los numeros elevados y sumados den el numero " , ac4 ,  " son : " ,  m2 , " y "  x2 
+					
+				FinSi
+				m2= m2 + 1
+			FinMientras
+			x2 = x2+ 1 
+			m2=1
+		FinMientras
+		
+	FinMientras
+FinMientras	
+FinFuncion
+
+Funcion fac (z , k)
+		Si z = 0 Entonces
+			resultado = 1
+		Sino
+			resultado = 1
+			i = 1
+			Mientras i <= z Hacer
+				resultado = resultado * i
+				i = i + 1
+			FinMientras
+		FinSi
+		
+		Escribir "El factorial de ", z, " es ", resultado
+		
+		Imprimir "Presiona enter para el siguiente factorial "
+		leer p
+		Borrar Pantalla
+		
+		Si k = 0 Entonces
+			resultado2 = 1
+		Sino
+			resultado2 = 1
+			i2 = 1
+			Mientras i2 <= k Hacer
+				resultado2 = resultado2 * i2
+				i2 = i2 + 1
+			FinMientras
+		FinSi
+		
+		Escribir "El factorial de ", k, " es ", resultado2
+FinFuncion
+
+funcion serie (z , k)
+		Si z >= 1 Entonces
+			Escribir "Los primeros ", z, " t rminos de la serie Fibonacci son:"
+			
+			a = 1
+			b = 1
+			i = 1
+			
+			Mientras i <= z Hacer
+				Escribir a
+				
+				c = a + b
+				a = b
+				b = c
+				
+				i = i + 1
+			FinMientras
+		Sino
+			Escribir "Ingrese un valor v lido para la cantidad de t rminos."
+		FinSi
+		Imprimir "Presiona enter para la siguiente serie finonaci "
+		leer p
+		Borrar Pantalla
+		
+		
+			Si k >= 1 Entonces
+				Escribir "Los primeros ", k, " t rminos de la serie Fibonacci son:"
+				
+				a2 = 1
+				b2 = 1
+				i2 = 1
+				
+				Mientras i2 <= k Hacer
+					Escribir a2
+					
+					c2 = a2 + b2
+					a2 = b2
+					b2 = c2
+					i2 = i2 + 1
+				FinMientras
+			Sino
+				Escribir "Ingrese un valor v lido para la cantidad de t rminos."
+			FinSi
+			
+
+FinFuncion
+
+Funcion tabla(z, k)
+    Definir a, t, b como Entero
+    Imprimir "Tabla de multiplicar de ", z
+    a = 1
+    t = 1
+    b = 1
+    Mientras (b <= 10)
+        r = b * z
+        Imprimir z, " * ", b, " = ", r
+        b = b + 1
+    FinMientras
+	
+	Imprimir "Presiona enter para la siguiente tabla de multiplicar"
+	leer p
+	Borrar Pantalla
+	
+
+		Imprimir "Tabla de multiplicar de ", k
+		a2= 1
+		t2= 1
+		b2= 1
+		Mientras (b2<= 10)
+			r2= b2* k
+			Imprimir k, "*", b2," = ", r2
+			b2= b2+ 1
+		FinMientras
+	
+FinFuncion
+
+
+
+Algoritmo sin_titulo
+	Imprimir "Dime un numero "
+	leer z
+	Imprimir "Dime otro numero "
+	leer k
+	imprimir " Este es un menu de las respuestas que se pueden obtener"
+	Imprimir "1. Tabla de multiplicar de los numeros dados"
+	Imprimir "2. Factorial"
+	Imprimir "3. Serie finonaci"
+	Imprimir "4. Z2=X2+Y2"
+	Imprimir "5.Las 10 tablas de multiplicar "
+	Imprimir "Eigue una opccion"
+	leer s
+segun s Hacer
+			1:
+				tabla(z ,k)
+			2:
+				fac(z , k)
+			3:
+				serie(z , k)
+			4:
+				cuadrado(z , k)
+			5:
+			multi(z , k)
+	FinSegun
+
+FinAlgoritmo
