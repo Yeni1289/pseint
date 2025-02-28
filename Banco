@@ -1,0 +1,37 @@
+Algoritmo sin_titulo
+definir Mil,Quinientos,Doscientos,Cien,Cincuenta,Veinte,Diez,Cinco,Dos,Uno,cantidad Como Real
+imprimir "Ingresa la cantidad a retirar"
+leer cantidad
+Mil <- trunc (cantidad/1000)
+cantidad= cantidad MOD 1000
+Quinientos=trunc(cantidad/500)
+cantidad= cantidad  MOD 500 
+Doscientos= trunc (cantidad / 200)
+cantidad= cantidad MOD 200
+Cien=trunc (cantidad/100)
+cantidad = cantidad MOD 100
+Cincuenta =trunc (cantidad / 50)
+cantidad = cantidad MOD 50
+Veinte =trunc (cantidad / 20)
+cantidad = cantidad MOD 20
+Diez = trunc (cantidad/ 10) 
+cantidad = cantidad MOD 10
+Cinco=trunc (cantidad/ 5)
+cantidad= cantidad MOD 5
+Dos = trunc (cantidad/ 2)
+cantidad= cantidad MOD 2
+Uno=trunc (cantidad/1)
+cantidad= cantidad MOD 1
+
+escribir "Cantidad de billetes y de monedas a recibir:"
+imprimir "Billetes de $1000:" Mil
+imprimir "Billetes de $500:" Quinientos 
+imprimir "Billetes de $200:" Doscientos
+imprimir "Billetes de $100:" Cien
+imprimir "Billetes de $50:" Cincuenta
+imprimir "Billetes de $20:" Veinte 
+imprimir "Monedas de $10:" Diez
+imprimir "Monedas de $5:" Cinco
+imprimir "Monedas de $2:" Dos 
+imprimir "Monedas de $1:" Uno
+FinAlgoritmo
