@@ -1,0 +1,33 @@
+Proceso RelojDeArena
+    Definir n, i, j Como Entero
+    
+    Escribir "Ingrese un número impar para el tamaño del reloj de arena: "
+    Leer n
+    
+    Si n MOD 2 = 0 Entonces
+        Escribir "El número debe ser impar."
+        FinProceso
+    FinSi
+    
+    // Parte superior del reloj
+    Para i <- 0 Hasta n / 2 Hacer
+        Para j <- 0 Hasta i Hacer
+            Escribir " " Sin Saltar
+        FinPara
+        Para j <- 0 Hasta n - 2 * i - 1 Hacer
+            Escribir "*" Sin Saltar
+        FinPara
+        Escribir ""
+    FinPara
+    
+    // Parte inferior del reloj
+    Para i <- (n / 2) - 1 Hasta 0 Con Paso -1 Hacer
+        Para j <- 0 Hasta i Hacer
+            Escribir " " Sin Saltar
+        FinPara
+        Para j <- 0 Hasta n - 2 * i - 1 Hacer
+            Escribir "*" Sin Saltar
+        FinPara
+        Escribir ""
+    FinPara
+FinProceso
